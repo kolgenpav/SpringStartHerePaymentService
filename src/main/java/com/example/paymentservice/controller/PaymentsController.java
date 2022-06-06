@@ -11,7 +11,11 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.UUID;
 import java.util.logging.Logger;
 
-/*In application.properties of the app: server.port=9090*/
+
+/**
+ * This controller also can be called by another Web app by REST.
+ * In application.properties of the app: server.port=9090
+ */
 @RestController
 public class PaymentsController {
     private static Logger logger = Logger.getLogger(PaymentsController.class.getName());
