@@ -11,12 +11,13 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.UUID;
 import java.util.logging.Logger;
 
+/*In application.properties of the app: server.port=9090*/
 @RestController
 public class PaymentsController {
     private static Logger logger = Logger.getLogger(PaymentsController.class.getName());
 
     /*
-        curl -X POST http://localhost:8080/payment -H "Content-Type: application/json"
+        curl -X POST http://localhost:9090/payment -H "Content-Type: application/json"
         -H "requestId: qwerty" -d "{\"id\": \"abcd\", \"amount\": 500}"
      */
     @PostMapping("/payment")
